@@ -1,5 +1,5 @@
 {
-  "name": "template-bun",
+  "name": "mcp-coinflip",
   "module": "index.ts",
   "type": "module",
   "scripts": {
@@ -17,8 +17,8 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
     "@sentry/bun": "^9.11.0",
-    "body-parser": "^2.2.0",
     "express": "^5.1.0",
     "zod": "^3.24.2"
   }
