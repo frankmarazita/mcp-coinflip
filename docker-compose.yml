@@ -2,8 +2,8 @@ services:
   app:
     image: "${IMAGE_URL}:latest"
     container_name: ${REPO_NAME}
-    ports:
-      - "8755:3000"
+    # access at :8755
+    network_mode: host
     environment:
       ENVIRONMENT: ${ENVIRONMENT}
       SENTRY_DSN: ${SENTRY_DSN}
