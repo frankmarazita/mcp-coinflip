@@ -1,0 +1,10 @@
+services:
+  app:
+    image: ${IMAGE_URL}
+    container_name: ${PACKAGE_NAME}
+    ports:
+      - "3000:3000"
+    environment:
+      ENVIRONMENT: ${ENVIRONMENT}
+      SENTRY_DSN: ${SENTRY_DSN}
+    restart: on-failure:5
