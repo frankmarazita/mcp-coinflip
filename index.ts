@@ -9,8 +9,8 @@ Sentry.init({
   tracesSampleRate: 1.0,
 });
 
-app.listen(8755, () => {
-  console.log("Server running on port:", 8755);
+app.listen(3000, () => {
+  console.log("Server running on port:", 3000);
 });
 
 function exitHandler() {
