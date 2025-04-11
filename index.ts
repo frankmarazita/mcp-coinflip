@@ -9,7 +9,7 @@ Sentry.init({
   tracesSampleRate: 1.0,
 });
 
-app.listen(8755, () => {
+app.listen(8755, "0.0.0.0", () => {
   console.log("Server running on port:", 8755);
 });
 
