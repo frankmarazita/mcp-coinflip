@@ -29,6 +29,10 @@ app.get("/", (_, res) => {
   res.sendStatus(200);
 });
 
+app.get("/health", (_, res) => {
+  res.json({ status: "ok" });
+});
+
 app.get("/sse", async (_, res) => {
   const transport = new SSEServerTransport("/messages", res);
   transports.set(transport.sessionId, transport);
